@@ -1,0 +1,151 @@
+-a100
+072A:0100 sub cx, word ptr [bx]
+072A:0102 sub dx, word ptr [bx+78]
+072A:0105 sub bx, word ptr [bx+3456]
+072A:0109 sub si, word ptr [bx+si]
+072A:010B sub di, word ptr [bx+si+79]
+072A:010E sub bp, word ptr [bx+si+5678]
+072A:0112 sub si, word ptr [bx+di]
+072A:0114 sub di, word ptr [bx+di+29]
+072A:0117 sub bp, word ptr [bx+di+5678]
+072A:011B sub sp, word ptr [si]
+072A:011D sub dx, word ptr [si+28]
+072A:0120 sub bx, word ptr [si+3456]
+072A:0124 sub ax, word ptr [di]
+072A:0126 sub dx, word ptr [di+58]
+072A:0129 sub bx, word ptr [di+3456]
+072A:012D sub cx, word ptr [bp]
+072A:0130 sub dx, word ptr [bp+58]
+072A:0133 sub bx, word ptr [bp+3456]
+072A:0137 sub si, word ptr [bp+si]
+072A:0139 sub di, word ptr [bp+si+39]
+072A:013C sub bp, word ptr [bp+si+5678]
+072A:0140 sub si, word ptr [bp+di]
+072A:0142 sub di, word ptr [bp+di+49]
+072A:0145 sub bp, word ptr [bp+di+5678]
+072A:0149 sub word ptr [bx], cx
+072A:014B sub word ptr [bx+78], dx 
+072A:014E sub word ptr [bx+3456], bx 
+072A:0152 sub word ptr [bx+si], ax
+072A:0154 sub word ptr [bx+si+69], sp
+072A:0157 sub word ptr [bx+si+5678], di
+072A:015B sub word ptr [bx+di], bp
+072A:015D sub word ptr [bx+di+49], si
+072A:0160 sub word ptr [bx+di+5678], di
+072A:0164 sub word ptr [si], ax
+072A:0166 sub word ptr [si+78], cx
+072A:0169 sub word ptr [si+3456], dx
+072A:016D sub word ptr [di], bp
+072A:016F sub word ptr [di+78], sp
+072A:0172 sub word ptr [di+3456], si
+072A:0176 sub word ptr [bp], di
+072A:0179 sub word ptr [bp+78], cx
+072A:017C sub word ptr [bp+3456], dx
+072A:0180 sub word ptr [bp+si], si
+072A:0182 sub word ptr [bp+si+59], di
+072A:0185 sub word ptr [bp+si+5678], ax
+072A:0189 sub word ptr [bp+di], di
+072A:018B sub word ptr [bp+di+19], bx
+072A:018E sub word ptr [bp+di+5678], dx
+072A:0192 sub al, byte ptr [di]
+072A:0194 sub ah, byte ptr [di+78]
+072A:0197 sub bh, byte ptr [di+3456]
+072A:019B sub cl, byte ptr [bp]
+072A:019E sub dl, byte ptr [bp+78]
+072A:01A1 sub bl, byte ptr [bp+3456]
+072A:01A5 sub ch, byte ptr [bp+si]
+072A:01A7 sub byte ptr [di+78], dh
+072A:01AA sub byte ptr [di+3456], dl
+072A:01AE sub byte ptr [bp], ch
+-u100
+072A:0100 2B0F              SUB     CX,[BX]
+072A:0102 2B5778            SUB     DX,[BX+78]
+072A:0105 2B9F5634          SUB     BX,[BX+3456]
+072A:0109 2B30              SUB     SI,[BX+SI]
+072A:010B 2B7879            SUB     DI,[BX+SI+79]
+072A:010E 2BA87856          SUB     BP,[BX+SI+5678]
+072A:0112 2B31              SUB     SI,[BX+DI]
+072A:0114 2B7929            SUB     DI,[BX+DI+29]
+072A:0117 2BA97856          SUB     BP,[BX+DI+5678]
+072A:011B 2B24              SUB     SP,[SI]
+072A:011D 2B5428            SUB     DX,[SI+28]
+072A:0120 2B9C5634          SUB     BX,[SI+3456]
+072A:0124 2B05              SUB     AX,[DI]
+072A:0126 2B5558            SUB     DX,[DI+58]
+072A:0129 2B9D5634          SUB     BX,[DI+3456]
+072A:012D 2B4E00            SUB     CX,[BP+00]
+072A:0130 2B5658            SUB     DX,[BP+58]
+072A:0133 2B9E5634          SUB     BX,[BP+3456]
+072A:0137 2B32              SUB     SI,[BP+SI]
+072A:0139 2B7A39            SUB     DI,[BP+SI+39]
+072A:013C 2BAA7856          SUB     BP,[BP+SI+5678]
+072A:0140 2B33              SUB     SI,[BP+DI]
+072A:0142 2B7B49            SUB     DI,[BP+DI+49]
+072A:0145 2BAB7856          SUB     BP,[BP+DI+5678]
+072A:0149 290F              SUB     [BX],CX
+072A:014B 295778            SUB     [BX+78],DX
+072A:014E 299F5634          SUB     [BX+3456],BX
+072A:0152 2900              SUB     [BX+SI],AX
+072A:0154 296069            SUB     [BX+SI+69],SP
+072A:0157 29B87856          SUB     [BX+SI+5678],DI
+072A:015B 2929              SUB     [BX+DI],BP
+072A:015D 297149            SUB     [BX+DI+49],SI
+072A:0160 29B97856          SUB     [BX+DI+5678],DI
+072A:0164 2904              SUB     [SI],AX
+072A:0166 294C78            SUB     [SI+78],CX
+072A:0169 29945634          SUB     [SI+3456],DX
+072A:016D 292D              SUB     [DI],BP
+072A:016F 296578            SUB     [DI+78],SP
+072A:0172 29B55634          SUB     [DI+3456],SI
+072A:0176 297E00            SUB     [BP+00],DI
+072A:0179 294E78            SUB     [BP+78],CX
+072A:017C 29965634          SUB     [BP+3456],DX
+072A:0180 2932              SUB     [BP+SI],SI
+072A:0182 297A59            SUB     [BP+SI+59],DI
+072A:0185 29827856          SUB     [BP+SI+5678],AX
+072A:0189 293B              SUB     [BP+DI],DI
+072A:018B 295B19            SUB     [BP+DI+19],BX
+072A:018E 29937856          SUB     [BP+DI+5678],DX
+072A:0192 2A05              SUB     AL,[DI]
+072A:0194 2A6578            SUB     AH,[DI+78]
+072A:0197 2ABD5634          SUB     BH,[DI+3456]
+072A:019B 2A4E00            SUB     CL,[BP+00]
+072A:019E 2A5678            SUB     DL,[BP+78]
+072A:01A1 2A9E5634          SUB     BL,[BP+3456]
+072A:01A5 2A2A              SUB     CH,[BP+SI]
+072A:01A7 287578            SUB     [DI+78],DH
+072A:01AA 28955634          SUB     [DI+3456],DL
+072A:01AE 286E00            SUB     [BP+00],CH
+072A:01B1 284E56            SUB     [BP+56],CL
+072A:01B4 28BE5634          SUB     [BP+3456],BH
+072A:01B8 281A              SUB     [BP+SI],BL
+072A:01BA 286245            SUB     [BP+SI+45],AH
+072A:01BD 28827856          SUB     [BP+SI+5678],AL
+072A:01C1 806D7815          SUB     BYTE PTR [DI+78],15
+072A:01C5 80AD563416        SUB     BYTE PTR [DI+3456],16
+072A:01CA 806E0028          SUB     BYTE PTR [BP+00],28
+072A:01CE 806E5688          SUB     BYTE PTR [BP+56],88
+072A:01D2 81AE56343412      SUB     WORD PTR [BP+3456],1234
+072A:01D8 812A1534          SUB     WORD PTR [BP+SI],3415
+072A:01DC 816A458547        SUB     WORD PTR [BP+SI+45],4785
+072A:01E1 81AA78563615      SUB     WORD PTR [BP+SI+5678],1536
+072A:01E7 83AE563412        SUB     WORD PTR [BP+3456],+12
+072A:01EC 832A35            SUB     WORD PTR [BP+SI],+35
+072A:01EF 836A4545          SUB     WORD PTR [BP+SI+45],+45
+072A:01F3 83AA785616        SUB     WORD PTR [BP+SI+5678],+16
+072A:01F8 80E915            SUB     CL,15
+072A:01FB 80ED16            SUB     CH,16
+072A:01FE 80EA28            SUB     DL,28
+072A:0201 80EC88            SUB     AH,88
+072A:0204 81EB3412          SUB     BX,1234
+072A:0208 81EF1534          SUB     DI,3415
+072A:020C 81EC8547          SUB     SP,4785
+072A:0210 81ED3615          SUB     BP,1536
+072A:0214 83EB14            SUB     BX,+14
+072A:0217 83EE35            SUB     SI,+35
+072A:021A 83EC65            SUB     SP,+65
+072A:021D 83ED16            SUB     BP,+16
+072A:0220 0417              ADD     AL,17
+072A:0222 051752            ADD     AX,5217
+-
+-q
